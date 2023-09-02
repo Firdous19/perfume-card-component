@@ -110,3 +110,31 @@ body {
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
+@media(max-width:660px)
+{
+    .container{
+        grid-template-areas: 'image '
+        'container1';
+        width: 400px;
+    }
+    .image img{
+        width: 400px;
+    }
+}
+@media(max-width:485px)
+{
+    .container{
+        grid-template-areas: 'image '
+        'container1';
+        width: 360px;
+    }
+    .image img{
+        border-radius: 10px 10px 0 0px;
+        height: 405px;
+        width: 360px;
+    }
+    .container1{
+        border-radius: 0 0 10px 10px;
+        padding: 20px 30px 28px 25px;
+    }
+}
